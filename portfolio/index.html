@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phalguni Kulkarni — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">pk<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#wip">building</a></li>
+        <li><a href="#resume">resume</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀️</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">hey, I'm</p>
+      <h1 class="hero-name">Phalguni Kulkarni</h1>
+      <p class="hero-tagline">
+        <span id="typed"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-sub">
+        IS student at SJBIT · building things at the intersection of software, ML, and the web.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">see my work</a>
+        <a href="#resume" class="btn btn-outline">view resume</a>
+        <a href="#contact" class="btn btn-outline">get in touch</a>
+      </div>
+    </div>
+    <div class="hero-blob"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">about me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a software engineering student at <strong>SJBIT, Bangalore</strong>, passionate about building
+            products that are both technically solid and genuinely useful.
+          </p>
+          <p>
+            My interests span <strong>full-stack web development</strong>, <strong>machine learning</strong>, <strong>GEN AI</strong>
+            and <strong>deep learning</strong> — I like understanding how things work under the hood and building on top of that.
+          </p>
+          <p>
+            I'm actively looking for opportunities where I can contribute, grow, and ship real things.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-num">SJBIT</span><span class="stat-label">Bangalore</span></div>
+          <div class="stat-card"><span class="stat-num">SDE</span><span class="stat-label">Focus</span></div>
+          <div class="stat-card"><span class="stat-num">ML</span><span class="stat-label">+ Deep Learning</span></div>
+          <div class="stat-card"><span class="stat-num">Web</span><span class="stat-label">Dev</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span><span class="tag">JavaScript</span>
+            <span class="tag">Java</span><span class="tag">C/C++</span><span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Web</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML/CSS</span><span class="tag">React</span>
+            <span class="tag">Node.js</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">ML / AI</h3>
+          <div class="skill-tags">
+            <span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+            <span class="tag">scikit-learn</span><span class="tag">NumPy</span><span class="tag">Pandas</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span><span class="tag">GitHub</span>
+            <span class="tag">VS Code</span><span class="tag">Linux</span><span class="tag">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">projects</h2>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-reveal>
+          <div class="project-header">
+            <span class="project-icon">🧠</span>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Digit Recognizer Model</h3>
+          <p class="project-desc">A real-time handwritten digit recognition web app powered by deep learning with 92% accuracy.
+🔗 Live Demo: https://digit-recognizer-deploy.streamlit.app/</p>
+          <div class="project-tags">
+            <span class="tag tag-sm">Python</span><span class="tag tag-sm">ML</span><span class="tag tag-sm">Java</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-header">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">V2V Road Safety & Navigation Platform</h3>
+          <p class="project-desc">A smart vehicle-to-vehicle safety and navigation platform using real-time sensor data for accident prevention.
+         🔗 Demo: https://drive.google.com/file/d/1j1yHYiyTjgjCVc5ZNjm13yLUjpF0xNmk/view</p>
+          <div class="project-tags">
+            <span class="tag tag-sm">Flutter</span><span class="tag tag-sm">IoT</span><span class="tag tag-sm">BLE</span><span class="tag tag-sm">App development</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-header">
+            <span class="project-icon">🔬</span>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Event Organizer Web application</h3>
+          <p class="project-desc">A full-stack web application for seamless event creation, management, and user interaction.</p>
+          <div class="project-tags">
+            <span class="tag tag-sm">Deep Learning</span><span class="tag tag-sm">PyTorch</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-header">
+            <span class="project-icon">🔬</span>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Data Wiping System For Secure IT Disposal</h3>
+          <p class="project-desc">A secure data sanitization system for IT asset disposal that uses industry-standard wiping techniques, integrated with ML-based comparison for accuracy evaluation and comprehensive operation logs.</p>
+          <div class="project-tags">
+            <span class="tag tag-sm">Data Sanitization</span><span class="tag tag-sm">IT Asset Disposition(ITAD)</span><span class="tag tag-sm">Information Security</span><span class="tag tag-sm">Verification & Validation</span>
+          </div>
+        </div>
+
+      </div>
+      <!-- ADMIN: add project -->
+      <div class="admin-add-btn" id="addProjectBtn" style="display:none; margin-top:2rem; text-align:center">
+        <button class="btn btn-outline admin-btn" onclick="openModal('project')">+ add project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENTLY BUILDING -->
+  <section class="section" id="wip">
+    <div class="container">
+      <h2 class="section-title">currently building</h2>
+      <div class="wip-grid" id="wipGrid">
+        <div class="wip-card" data-reveal>
+          <div class="wip-status"><span class="pulse"></span><span>in progress</span></div>
+          <h3 class="wip-title">Event organization platform for a client deployment</h3>
+          <p class="wip-desc">Building a web app for an organization! Event Booking, Gallery & queries bot using React elements</p>
+          <div class="wip-progress">
+            <div class="progress-bar"><div class="progress-fill" style="--progress: 30%"></div></div>
+            <span class="progress-label">~30% done</span>
+          </div>
+        </div>
+
+        <div class="wip-card" data-reveal>
+          <div class="wip-status"><span class="pulse"></span><span>in progress</span></div>
+          <h3 class="wip-title">Research for patent of an innovation</h3>
+          <p class="wip-desc">Hybrid OCR+LLM based exxtraction for CA firms and other solutions</p>
+          <div class="wip-progress">
+            <div class="progress-bar"><div class="progress-fill" style="--progress: 20%"></div></div>
+            <span class="progress-label">~20% done</span>
+          </div>
+        </div>
+      </div>
+      <!-- ADMIN: add wip -->
+      <div class="admin-add-btn" id="addWipBtn" style="display:none; margin-top:1.5rem">
+        <button class="btn btn-outline admin-btn" onclick="openModal('wip')">+ add current work</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SCORE -->
+  <section class="section section-alt" id="resume">
+    <div class="container">
+      <h2 class="section-title">resume</h2>
+      <div class="resume-wrapper">
+        <div class="resume-score-card">
+          <div class="score-ring">
+            <svg viewBox="0 0 120 120" class="score-svg">
+              <circle cx="60" cy="60" r="50" class="score-track"/>
+              <circle cx="60" cy="60" r="50" class="score-fill" id="scoreCircle"/>
+            </svg>
+            <div class="score-center">
+              <span class="score-num" id="scoreNum">0</span>
+              <span class="score-denom">/10</span>
+            </div>
+          </div>
+          <div class="score-details">
+            <h3 class="score-title">Resume Score</h3>
+            <p class="score-sub">Based on industry standards for software engineering roles</p>
+            <div class="score-breakdown">
+              <div class="score-item">
+                <span class="score-label">Technical Skills</span>
+                <div class="score-bar"><div class="score-bar-fill" style="--w:90%"></div></div>
+                <span class="score-val">9/10</span>
+              </div>
+              <div class="score-item">
+                <span class="score-label">Projects</span>
+                <div class="score-bar"><div class="score-bar-fill" style="--w:80%"></div></div>
+                <span class="score-val">8/10</span>
+              </div>
+              <div class="score-item">
+                <span class="score-label">Education</span>
+                <div class="score-bar"><div class="score-bar-fill" style="--w:85%"></div></div>
+                <span class="score-val">8.5/10</span>
+              </div>
+              <div class="score-item">
+                <span class="score-label">Presentation</span>
+                <div class="score-bar"><div class="score-bar-fill" style="--w:88%"></div></div>
+                <span class="score-val">8.8/10</span>
+              </div>
+            </div>
+            <a href="assets/Resume.pdf" download class="btn btn-primary" style="margin-top:1.5rem; display:inline-block">
+              ↓ download resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">let's connect</h2>
+      <p class="contact-sub">Open to opportunities, collaborations, or just a good tech conversation.</p>
+      <div class="contact-links">
+        <a href="mailto:phalgunikulkarni95@gmail.com" class="contact-card">
+          <span class="contact-icon">✉️</span><span>email</span>
+        </a>
+        <a href="https://github.com/phalgunikulkarni" target="_blank" class="contact-card">
+          <span class="contact-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </span><span>github</span>
+        </a>
+        <a href="www.linkedin.com/in/phalguni-kulkarni-8a46ba2a7" target="_blank" class="contact-card">
+          <span class="contact-icon">💼</span><span>linkedin</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>built by Phalguni Kulkarni · <span id="year"></span></p>
+    <p class="footer-hint">press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd> for admin mode</p>
+  </footer>
+
+  <!-- ADMIN MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Add Work</h3>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ADMIN TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
